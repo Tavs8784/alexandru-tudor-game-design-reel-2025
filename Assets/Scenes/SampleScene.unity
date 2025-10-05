@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 112110401}
   - component: {fileID: 112110406}
   - component: {fileID: 112110405}
+  - component: {fileID: 112110407}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -280,6 +281,24 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &112110407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112110400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93b8332241d79400487b5745a0a19e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sourceCamera: {fileID: 330585545}
+  radius: 5.3
+  groundY: 0
+  fillColor: {r: 1, g: 0.8, b: 0, a: 0.12}
+  lineColor: {r: 1, g: 0.7, b: 0, a: 0.9}
+  lineThickness: 2
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,7 +360,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 120
-  field of view: 105.9
+  field of view: 55.7
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -438,7 +457,7 @@ MonoBehaviour:
   hitColor: {r: 1, g: 0.2, b: 0, a: 0.9}
   drawViewportRays: 1
   raysX: 11
-  raysY: 1
+  raysY: 3
   raycastAgainstWorld: 1
   occlusionMask:
     serializedVersion: 2
@@ -796,6 +815,7 @@ GameObject:
   - component: {fileID: 1656997971364619597}
   - component: {fileID: 2624537127257654490}
   - component: {fileID: 6404684438082862213}
+  - component: {fileID: 6404684438082862214}
   m_Layer: 0
   m_Name: Sweeper
   m_TagString: Untagged
@@ -812,7 +832,7 @@ Transform:
   m_GameObject: {fileID: 5369950600278443006}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -1.8056561, y: 8.57, z: -0.32437468}
+  m_LocalPosition: {x: -1.8056561, y: 3.72, z: -0.32}
   m_LocalScale: {x: 331.63, y: 1500, z: 300}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -870,6 +890,57 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3095712605640437078, guid: 6c53123f6d28c4d49a1d4284b31cceca, type: 3}
+--- !u!114 &6404684438082862214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5369950600278443006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1c18f1a3b95e44d2adeaf28dfec97c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startY: 3.72
+  endY: 9.46
+  snapToStartOnPlay: 0
+  legTime: 1
+  pauseAtEnds: 0.2
+  telegraphLead: 0.5
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 7.1369047
+      outSlope: 7.1369047
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0
+      outWeight: 0.10642202
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.008412493
+      outSlope: 0.008412493
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.56605506
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  onTelegraph:
+    m_PersistentCalls:
+      m_Calls: []
+  onMoveStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onMoveEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7186173519680411657
 GameObject:
   m_ObjectHideFlags: 0
