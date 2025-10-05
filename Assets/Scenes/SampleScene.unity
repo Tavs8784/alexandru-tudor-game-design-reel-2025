@@ -250,8 +250,8 @@ MonoBehaviour:
   gravity: -20
   cam: {fileID: 330585546}
   mouseSensitivity: 28.4
-  pitchMin: -80
-  pitchMax: -5.5
+  pitchMin: -55
+  pitchMax: 50
   lockCursor: 0
   moveSharpness: 15.78
   lookSharpness: 122.8
@@ -430,15 +430,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 294bcacbc67bc4879978cdb6c61a7843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sourceCamera: {fileID: 0}
+  sourceCamera: {fileID: 330585545}
   minDistance: 0.05
-  maxDistance: 25
+  maxDistance: 22.3
   wireColor: {r: 1, g: 0.8, b: 0, a: 1}
   rayColor: {r: 1, g: 0.6, b: 0, a: 0.8}
   hitColor: {r: 1, g: 0.2, b: 0, a: 0.9}
   drawViewportRays: 1
-  raysX: 8
-  raysY: 4
+  raysX: 11
+  raysY: 1
   raycastAgainstWorld: 1
   occlusionMask:
     serializedVersion: 2
