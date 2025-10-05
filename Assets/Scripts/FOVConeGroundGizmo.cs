@@ -6,12 +6,12 @@ using UnityEditor;
 [ExecuteAlways]
 public class FOVConeGroundGizmo : MonoBehaviour
 {
-    public Camera sourceCamera;        // assign your FPS camera
-    public float radius = 20f;         // how far to draw the cone
-    public float groundY = 0f;         // y height of the ground plane
-    public Color fillColor  = new Color(1f, 0.8f, 0f, 0.12f);
-    public Color lineColor  = new Color(1f, 0.7f, 0f, 0.9f);
-    public float lineThickness = 2f;
+    [SerializeField] private Camera sourceCamera;        // assign your FPS camera
+    [SerializeField] private float radius = 20f;         // how far to draw the cone
+    [SerializeField] private float groundY = 0f;         // y height of the ground plane
+    [SerializeField] private Color fillColor  = new Color(1f, 0.8f, 0f, 0.12f);
+    [SerializeField] private Color lineColor  = new Color(1f, 0.7f, 0f, 0.9f);
+    [SerializeField] private float lineThickness = 2f;
 
     Camera Cam => sourceCamera ? sourceCamera : (sourceCamera = Camera.main);
 

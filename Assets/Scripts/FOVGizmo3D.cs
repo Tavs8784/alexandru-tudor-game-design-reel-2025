@@ -3,23 +3,23 @@ using UnityEngine;
 [ExecuteAlways]
 public class FOVGizmo3D : MonoBehaviour
 {
-    public Camera sourceCamera;              // auto-fills if left null
+    [SerializeField] private Camera sourceCamera;              // auto-fills if left null
     [Header("Range")]
-    public float minDistance = 0.05f;
-    public float maxDistance = 25f;
+    [SerializeField] private float minDistance = 0.05f;
+    [SerializeField] private float maxDistance = 25f;
 
     [Header("Style")]
-    public Color wireColor = new Color(1f, 0.8f, 0f, 1f);
-    public Color rayColor  = new Color(1f, 0.6f, 0f, 0.8f);
-    public Color hitColor  = new Color(1f, 0.2f, 0f, 0.9f);
+    [SerializeField] private Color wireColor = new Color(1f, 0.8f, 0f, 1f);
+    [SerializeField] private Color rayColor  = new Color(1f, 0.6f, 0f, 0.8f);
+    [SerializeField] private Color hitColor  = new Color(1f, 0.2f, 0f, 0.9f);
 
     [Header("Viewport Rays (optional)")]
-    public bool drawViewportRays = true;
+    [SerializeField] private bool drawViewportRays = true;
     [Range(0, 32)] public int raysX = 8;    // columns across the view
     [Range(0, 18)] public int raysY = 4;    // rows across the view
-    public bool raycastAgainstWorld = true;
-    public LayerMask occlusionMask = ~0;    // what blocks sight
-    public float hitMarkerSize = 0.06f;
+    [SerializeField] private bool raycastAgainstWorld = true;
+    [SerializeField] private LayerMask occlusionMask = ~0;    // what blocks sight
+    [SerializeField] private float hitMarkerSize = 0.06f;
 
     Camera Cam => sourceCamera ? sourceCamera : (sourceCamera = GetComponent<Camera>());
 
