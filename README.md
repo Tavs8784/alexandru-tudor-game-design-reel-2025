@@ -3,7 +3,6 @@
 **What this is:** Three tiny, self-contained slices that demonstrate level/system design:
 - **Level 1 – Navigate (“Find the Beacon”):** sightlines, landmarks, soft-gate, pacing.
 - **Level 2 – Place (“Rules-Based Arrangement”):** adjacency rules, instant feedback.
-- **Onboarding Slice:** teaching the core verb without text walls.
 
 ## Watch the annotated clips
 - Level 1 (90s): Captures/level_navigate_annotated.mp4
