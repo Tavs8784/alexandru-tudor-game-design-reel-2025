@@ -14,12 +14,9 @@
 - Download **Builds/Windows/** or **Builds/Android/**.
 - Controls: WASD/Left Stick to move, Mouse/Right Stick to look, E/Interact.
 
-## Design evidence (not just vibes)
-- `Artifacts/*.csv` — event logs and path samples used for pacing/heatmaps.
-- `Docs/*` — one-pagers (pacing graphs, readability maps, iteration notes).
 
 ## Tech
-Unity 2022.3 LTS (URP). ProBuilder blockouts, simple C# triggers, lightweight VFX for readability.
+Unity 6000.0.58f LTS (URP). ProBuilder blockouts, simple C# triggers, lightweight VFX for readability.
 
 ## License
 MIT for code. All demo assets are non-commercial portfolio samples.
