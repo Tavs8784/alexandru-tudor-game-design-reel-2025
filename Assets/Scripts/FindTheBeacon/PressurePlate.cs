@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[RequireComponent(typeof(Collider))]
 public class PressurePlate : MonoBehaviour
 {
     [Header("Activator Filter")]
